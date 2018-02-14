@@ -1,0 +1,39 @@
+ #login-container {
+    z-index: 1031;
+    right: 0;
+    position: fixed;
+ }
+
+ #account-container {
+    padding-top: 10px;
+    z-index: 1031;
+    right: 0;
+    position: fixed;
+ }
+
+ button {
+    margin-bottom: 5px;
+ }
+
+ input {
+    margin-bottom: 5px;
+    }
+
+ .background {
+     background-color: #fc634b;
+     color: white;
+ }
+
+ p {
+     text-align: center;
+ }
+
+ .groove-border {
+    border-style: groove;
+    background-color: white;
+    padding: 20px;  
+ }
+
+.list-group-item{
+    border-radius: 0;
+}

@@ -1,0 +1,27 @@
+<div class="row">
+    <div id="login-container"
+    *ngIf="!isLoggedIn"
+    class="groove-border container col-xs-11 col-sm-3 col-md-3 col-lg-2 container-right" >
+        <input class='form-control' placeholder=' Email or Username ' type='text' [(ngModel)]='username'>
+        <input class='form-control' placeholder="Password" type='password' [(ngModel)]='password'>
+        <button class='btn form-control btn-primary' (click)='loginUser(username, password)'> Login </button> 
+        <p> or log in with </p>
+        <div class='row' align='center'>
+            <a class='offset-1 col-3' href="https://www.facebook.com">
+                <img class='' src="/assets/icons/fb_icon.png"> 
+            </a>
+            <a class='col-4' href="https://www.twitter.com">
+                <img class='' src="/assets/icons/twitter_icon.png"> 
+            </a>
+            <a class='col-3 push-1' href="https://www.googleplus.com">
+                <img class='' src="/assets/icons/gplus_icon.png"> 
+            </a>
+        </div>
+    </div>
+    <div id="account-container" class="col-6 col-md-4" *ngIf="isLoggedIn">
+        <ul class="list-group">
+            <li class="list-group-item" [routerLink]="['./tracks']" >My Account</li>
+            <li class="list-group-item" (click)="logoutUser()">Logout</li>
+        </ul>
+    </div>
+</div>

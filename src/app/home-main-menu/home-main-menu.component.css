@@ -1,0 +1,12 @@
+.navbar{
+    justify-content: flex-start;
+}
+
+#btn-login {
+    cursor: pointer;
+    margin-left: auto;
+}
+
+#color {
+    color: white;
+}
