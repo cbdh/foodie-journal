@@ -93,3 +93,4 @@ export class DishDetailComponent implements OnInit {
 
 }
  */
+}
