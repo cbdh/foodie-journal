@@ -76,11 +76,6 @@ describe('UserService', () => {
   });
 
   describe('login', () => {
-    it('should check if the username is valid, if not return blank user', inject([UserService], (service: UserService) => {
-      service.login({name: ''});
-      expect(localStorage.getItem('CurrentUser')).toBeFalsy();
-    }));
-
     it('should check if the username is valid and exists in LS, then load from LS', inject([UserService], (service: UserService) => {
       localStorage.setItem(MockUser.name, JSON.stringify(MockUser));
       service.login(MockUser);
